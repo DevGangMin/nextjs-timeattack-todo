@@ -107,12 +107,37 @@
       "completed": false,
       "priority": "high",
       "createdAt": "2026-04-27T23:00:00.000Z"
+    },
+    {
+      "title": "스트레스받을땐 STEP 7을 진행하자",
+      "content": "스트레스를 받는다면,\nSTEP 7 을 진행하도록 하자.\nJSON.stringify를 쓰기 때문에 문제가 발생할리는 없겠지만 테스트를 위해 md를 한번 섞어 본다.\n\n여기는 한 줄 띄워진 곳입니다.",
+      "priority": "medium",
+      "category": "1",
+      "completed": false,
+      "createdAt": "2026-04-30T05:45:29.006Z",
+      "id": "n0zMPbQ"
     }
   ],
   "categories": [
-    { "id": "1", "name": "업무", "color": "blue" },
-    { "id": "2", "name": "공부", "color": "green" },
-    { "id": "3", "name": "개인", "color": "purple" },
-    { "id": "4", "name": "운동", "color": "red" }
+    {
+      "id": "1",
+      "name": "업무",
+      "color": "blue"
+    },
+    {
+      "id": "2",
+      "name": "공부",
+      "color": "green"
+    },
+    {
+      "id": "3",
+      "name": "개인",
+      "color": "purple"
+    },
+    {
+      "id": "4",
+      "name": "운동",
+      "color": "red"
+    }
   ]
 }

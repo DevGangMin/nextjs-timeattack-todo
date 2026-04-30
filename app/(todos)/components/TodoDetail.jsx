@@ -1,12 +1,11 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-
 const priorityLabel = { high: "높음", medium: "보통", low: "낮음" };
 
-function Row({ label, value }) {
+function Row({ label, value, className }) {
   return (
-    <div className="flex gap-3">
+    <div className={`flex gap-3 ${className}`}>
       <span className="w-20 shrink-0 text-sm text-gray-400">{label}</span>
       <span className="text-sm text-black">{value}</span>
     </div>
@@ -42,7 +41,7 @@ export default function TodoDetail({ todo }) {
       </div>
 
       <div className="flex flex-col gap-3 p-5 bg-white border border-gray-200 rounded-xl">
-        <Row label="내용" value={todo.content} />
+        <Row className="whitespace-pre-wrap" label="내용" value={todo.content} />
         <Row label="카테고리" value={`카테고리 ${todo.category}`} />
         <Row label="우선순위" value={priorityLabel[todo.priority] ?? todo.priority} />
         <Row label="생성일" value={new Date(todo.createdAt).toLocaleString("ko-KR")} />
