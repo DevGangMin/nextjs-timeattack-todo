@@ -2,7 +2,7 @@ import TodoCard from "../components/TodoCard";
 
 export const metadata = {
   title: "Todo 목록",
-  description: "등록된 할 일 목록 확인하기",
+  description: "등록된 할 일 목록을 확인하세요.",
 };
 
 export default async function TodosPage() {
