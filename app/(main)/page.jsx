@@ -1,8 +1,16 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="flex flex-col items-center gap-8 py-16">
+      <Image
+        src="/todoimage.png"
+        alt="Todo 앱 히어로 이미지"
+        width={1000}
+        height={600}
+        className="rounded-2xl"
+      />
       <div className="flex flex-col items-center gap-3">
         <h1 className="text-4xl font-bold text-gray-900">Todo App</h1>
         <p className="text-gray-500">할 일을 간편하게 관리하세요.</p>
@@ -23,7 +31,7 @@ export default function Home() {
           <span className="text-2xl">✏️</span>
           <span className="font-medium text-green-700">할 일 추가</span>
         </Link>
-      </div>
+      </div>  
     </div>
   );
 }
